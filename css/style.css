@@ -73,16 +73,11 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-<<<<<<< HEAD
 
     height: 50px;
 
     background: rgba(8, 11, 14, 0.7);
 
-=======
-    height: 80px;
-    background: rgba(8, 11, 14, 0.88);
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,13 +89,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
 
     gap: 50px;
 
-=======
-    gap: 42px;
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
 }
 
 /* Individual links */
@@ -108,7 +99,6 @@ body {
     position: relative;
     color: #ffffff;
     text-decoration: none;
-<<<<<<< HEAD
 
     font-family: "Roboto Condensed", sans-serif;
 
@@ -116,11 +106,6 @@ body {
 
     font-weight: 400;
 
-=======
-    font-family: Impact, "Arial Narrow", Arial, sans-serif;
-    font-size: 23px;
-    font-weight: normal;
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
     letter-spacing: 0.5px;
     transition: color 0.25s ease;
 }
@@ -131,16 +116,11 @@ body {
 }
 
 /* Active DOWNLOAD */
-<<<<<<< HEAD
 
 .nav-links a.active{
 
-=======
-.nav-links a.active {
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
     color: #e32620;
     font-size: 30px;
-<<<<<<< HEAD
 
     font-weight: 600;
 }
@@ -159,8 +139,6 @@ body {
 
     transition:
     transform 0.2s ease
-=======
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
 }
 
 /* =====================================================
@@ -173,7 +151,6 @@ body {
     display: block;
 }
 
-<<<<<<< HEAD
 
 
 /* -----------------------------------------------------
@@ -188,27 +165,6 @@ body {
 
     z-index: 1;
 
-=======
-/* CHARACTER 1 - ELLIS */
-.character1 {
-    left: 10%;
-    width: 18%;
-    z-index: 5;
-}
-
-/* CHARACTER 2 - NICK & ROCHELLE */
-.character2 {
-    left: 15%;
-    width: 35%;
-    z-index: 8;
-}
-
-/* CHARACTER 3 - COACH */
-.character3 {
-    left: 30%;
-    width: 35%;
-    z-index: 5;
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
 }
 
 /* =====================================================
@@ -275,26 +231,17 @@ body {
 .bottom-logos {
     position: absolute;
     z-index: 30;
-<<<<<<< HEAD
 
     left: 5%;
 
-=======
-    left: 10%;
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
     bottom: 15px;
     width: 2500px;
-<<<<<<< HEAD
 
     max-width: 60%;
 
     height: auto;
 
     mix-blend-mode: lighten;
-=======
-    max-width: 50%;
-    height: auto;
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
 }
 
 /* =====================================================
@@ -319,7 +266,6 @@ body {
     .nav-links a.active { font-size: 15px; }
 
     /* Characters */
-<<<<<<< HEAD
 
 
     .character2 {
@@ -331,11 +277,6 @@ body {
     }
 
 
-=======
-    .character1 { left: 1%; width: 32%; }
-    .character2 { left: 18%; width: 30%; }
-    .character3 { left: 35%; width: 30%; }
->>>>>>> d1276e57889cccc36bd8ad5b487ca49dcf8992d0
 
     /* Logo */
     .game-logo { width: 47%; right: 3%; }
