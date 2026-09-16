@@ -97,12 +97,12 @@ body {
    NAVIGATION BAR
 ===================================================== */
 .navbar {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 
-    height: 50px;
+    height: 60px;
 
     background: rgba(8, 11, 14, 0.7);
 
@@ -130,9 +130,9 @@ body {
 
     font-family: "Roboto Condensed", sans-serif;
 
-    font-size: 15px;
+    font-size: 20px;
 
-    font-weight: 400;
+    font-weight: 300;
 
     letter-spacing: 0.5px;
     transition: color 0.25s ease;
@@ -188,6 +188,8 @@ body {
 .character2 {
 
     left: 5%;
+
+    top: 70px;
 
     width: 68%;
 
@@ -262,7 +264,7 @@ body {
 
     left: 5%;
 
-    bottom: 15px;
+    bottom: 40px;
     width: 2500px;
 
     max-width: 60%;
@@ -280,10 +282,10 @@ body {
     width: 100%;
     min-height: 100vh;
     background-image: url("../images/BG2.png");
-    background-size: cover;
-    background-position: center;
+    background-size: auto;
+    background-position: top center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: visible;
     z-index: 0;
 }
 
