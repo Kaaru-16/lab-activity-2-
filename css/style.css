@@ -248,12 +248,67 @@ body {
    ABOUT SECTION
 ===================================================== */
 .about-section {
+    position: relative;
+
     width: 100%;
     min-height: 100vh;
-    background-image: url('../images/image_a06307.jpg');
+
+    background-image: url("../images/bg2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   ABOUT TEXT
+========================================= */
+
+.about-text {
+
+    position: absolute;
+
+    left: 6.5%;
+    top: 35%;
+    width: 67%;
+    max-width: 4000px;
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 3px #000000;
+
+}
+
+
+/* First / bold paragraph */
+
+.about-text h3 {
+
+    margin: 30px 0 40px 0;
+    top: 50%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(20px, 1.35vw, 18px);
+    line-height: 1.25;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px #000000;
+
+}
+
+
+/* Normal paragraphs */
+
+.about-text h4, .about-text h5{
+
+    margin: 25px 0 30px 0;
+    text-shadow: 2px 2px 3px #000000;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(20px, 0.85vw, 18px);
+    line-height: 1.25;
+    font-weight: 100;
+
 }
 
 /* =====================================================
