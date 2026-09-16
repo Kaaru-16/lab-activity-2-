@@ -51,7 +51,35 @@ body {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 0;
+}
+
+.hero {
+    position: relative;
+    z-index: 2;
+}
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 180px;
+
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(0, 0, 0, 0.3) 35%,
+        rgba(0, 0, 0, 0.8) 70%,
+        #000000 100%
+    );
+
+    z-index: 15;
+
+    pointer-events: none;
 }
 
 /* Dark overlay */
@@ -249,16 +277,14 @@ body {
 ===================================================== */
 .about-section {
     position: relative;
-
     width: 100%;
     min-height: 100vh;
-
-    background-image: url("../images/bg2.png");
+    background-image: url("../images/BG2.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     overflow: hidden;
+    z-index: 0;
 }
 
 
@@ -341,6 +367,17 @@ body {
 
     /* Bottom */
     .bottom-logos { left: 10%; width: 350px; }
+}
+
+.survivors-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 /* =====================================================
