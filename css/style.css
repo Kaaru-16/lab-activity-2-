@@ -494,7 +494,6 @@ body {
     display: block;
     object-fit: cover;
     border-radius: 4px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease;
 }
 
