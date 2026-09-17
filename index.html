@@ -4,126 +4,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
     <title>Left 4 Dead 2</title>
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- =========================================
-         NAVIGATION
-    ========================================== -->
     <header class="navbar">
         <nav class="nav-links">
             <a href="#about">ABOUT</a>
             <a href="#survivors">SURVIVORS</a>
-            <a href="#download" class="active">DOWNLOAD</a>
+            <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" class="active" target="_blank">DOWNLOAD</a>
             <a href="#infected">INFECTED</a>
             <a href="#gallery">GALLERY</a>
         </nav>
     </header>
 
-    <!-- =========================================
-         HERO SECTION
-    ========================================== -->
     <main>
-        <section class="hero">
 
-            <!-- BACKGROUND -->
+        <section class="hero">
             <div class="hero-background"></div>
 
-            <!-- =====================================
-                 CHARACTERS
-            ====================================== -->
-
-            <img
-                src="images/SURVIVORS.png"
-                alt="Characters"
-                class="character character2"
-            >
-
-            
-
-            <!-- =====================================
-                 GAME LOGO
-            ====================================== -->
+            <img src="images/SURVIVORS.png" alt="Characters" class="character character2">
             <img src="images/logo.png" alt="Left 4 Dead 2" class="game-logo">
-
-            <!-- =====================================
-                 PLAY NOW BUTTON
-            ====================================== -->
             <a href="https://store.steampowered.com/app/550/Left_4_Dead_2/" class="play-button" target="_blank" rel="noopener noreferrer">
                 PLAY NOW
             </a>
-
-            <!-- =====================================
-                 BOTTOM LOGOS
-            ====================================== -->
             <img src="images/banner.png" alt="Game information" class="bottom-logos">
 
         </section>
 
-<!-- =====================================
-     ABOUT SECTION
-====================================== -->
+        <section class="about-section" id="about">
 
-<section class="about-section" id="about">
+            <img src="images/About the Game.png" alt="About the Game" class="about-image">
 
-        <img 
-        src="images/About the Game.png"
-        alt="About the Game"
-        class="about-image"
-        >
+            <div class="about-text">
 
-    <div class="about-text">
+                <h1>
+                    Set in the zombie apocalypse, Left 4 Dead&trade; 2 (L4D2) is the highly anticipated
+                    sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008.
+                </h1>
 
-        <h1>
-            Set in the zombie apocalypse, Left 4 Dead™ 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, 
-            the #1 co-op game of 2008.
-        </h1>
+                <h3>
+                    This cooperative action horror FPS takes you and your friends through the cities,
+                    swamps and cemeteries of the Deep South, from Savannah to New Orleans across five
+                    expansive campaigns.
+                </h3>
 
-        <h3>
-            This cooperative action horror FPS takes you and your friends through the cities,
-            swamps and cemeteries of the Deep South, from Savannah to New Orleans across five
-            expansive campaigns.
-        </h3>
+                <h4>
+                    You'll play as one of four new survivors armed with a wide and devastating array of
+                    classic and upgraded weapons. In addition to firearms, you'll also get a chance to
+                    take out some aggression on infected with a variety of carnage-creating melee weapons,
+                    from chainsaws to axes and even the deadly frying pan.
+                </h4>
 
-        <h4>
-            You'll play as one of four new survivors armed with a wide and devastating array of
-            classic and upgraded weapons. In addition to firearms, you'll also get a chance to
-            take out some aggression on infected with a variety of carnage-creating melee weapons,
-            from chainsaws to axes and even the deadly frying pan.
-        </h4>
+                <h5>
+                    You'll be putting these weapons to the test against (or playing as Versus) three
+                    horrific and formidable new Special Infected. You'll also encounter five new
+                    "uncommon" common infected, including the terrifying Mudmen.
+                </h5>
 
-        <h5>
-            You'll be putting these weapons to the test against (or playing as Versus) three
-            horrific and formidable new Special Infected. You'll also encounter five new
-            "uncommon" common infected, including the terrifying Mudmen.
-        </h5>
+            </div>
 
-    </div class = "about-text 2">
+        </section>
 
-</section>
+        <section class="survivors-section" id="survivors">
+            <div>
+                <img src="images/THE SURVIVORS.png" alt="The Survivors" class="survivors-logo">
+            </div>
 
-<section class="survivors-section" id="survivors">
-    <div>
-        <img src="images/THE SURVIVORS.png" alt="The Survivors" class="survivors-logo">
-    </div>
+            <div class="arrow1"></div>
 
-    <div class="arrow1"></div>
-    <div class="arrow2"></div>
-    
-</section>
+            <div> 
+                <img src="images/COACH.png" alt="Coach" class="coach-image">
+            </div>
+            <div>
+                <img src="images/COACH TEXT.png" alt="CoachText" class="coach-text">
+            </div >
 
-</main>
+            <div class="coach-info">
+                    He was a high-school health teacher and coordinator for the freshman football team before the Infection hit his hometown of Savannah. 
+                    He is the oldest of the group and takes it upon himself to motivate his fellow Survivors.
+            </div>
 
-    <!-- JAVASCRIPT -->
+            <div class="coach-quote">
+                "I ain't gonna die waitin' on salvation. As long as we still got guns, we gonna fight."
+            </div>
+
+            <div class="arrow2"></div>
+
+            <img src="images/DOTS.png" alt="dots" class="dots">
+
+        </section>
+
+        <section class="infected-section" id="infected">
+            <img src="images/THE INFECTED.png" alt="The Infected" class="infected-logo">
+            <p class="infected-text">
+                Rather than being undead, they are living humans
+                who have been Infected by the Green Flu virus,
+                causing massively increased aggression and loss of
+                many higher brain functions such as speech and
+                self-preservation.
+            </p>
+            <div class="infected-group">
+                <img src="images/INFECTED.png" alt="" class="infected-image">
+                <div class="infected-unit charger" tabindex="0">
+                    <img src="images/CHARGE R.png" alt="Charger">
+                    <p class="infected-info">Charges in a straight line, grabs the first survivor it hits, and pins them down while it keeps swinging.</p>
+                </div>
+                <div class="infected-unit hunter" tabindex="0">
+                    <img src="images/HUNTER.png" alt="Hunter">
+                    <p class="infected-info">Climbs high ground and pounces on a lone survivor, pinning them to the ground with a barrage of claws.</p>
+                </div>
+                <div class="infected-unit spitter" tabindex="0">
+                    <img src="images/SPITTER.png" alt="Spitter">
+                    <p class="infected-info">Spits a ball of acid that spreads into a burning pool, pushing the team out of position or off cover.</p>
+                </div>
+                <div class="infected-unit jockey" tabindex="0">
+                    <img src="images/JOCKEY.png" alt="Jockey">
+                    <p class="infected-info">Leaps onto a survivor's back and steers them away from the group, straight toward the rest of the horde.</p>
+                </div>
+                <div class="infected-unit tank" tabindex="0">
+                    <img src="images/TANK.png" alt="Tank">
+                    <p class="infected-info">A towering brute with huge health and melee damage. It throws chunks of rock and can flatten cover on approach.</p>
+                </div>
+                <div class="infected-unit witch" tabindex="0">
+                    <img src="images/WITCH.png" alt="Witch">
+                    <p class="infected-info">Sits alone crying and ignores survivors until startled. Provoked, she drops whoever is nearest in a few hits.</p>
+                </div>
+                <div class="infected-unit boomer" tabindex="0">
+                    <img src="images/BOOMER.png" alt="Boomer">
+                    <p class="infected-info">Bursts on contact or death, drenching survivors in bile that blinds them and calls every infected in range.</p>
+                </div>
+                <div class="infected-unit smoker" tabindex="0">
+                    <img src="images/SMOKER.png" alt="Smoker">
+                    <p class="infected-info">Pulls a survivor away with its tongue from a distance, isolating them before the horde closes in.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery-section" id="gallery">
+            <img src="images/MEDIA GALLERY.png" alt="Media Gallery" class="gallery-logo">
+            <div class="gallery-grid">
+                <img src="images/gallery-1.png" alt="" class="gallery-photo">
+                <img src="images/gallery-2.png" alt="" class="gallery-photo">
+                <img src="images/gallery-3.png" alt="" class="gallery-photo">
+                <img src="images/gallery-4.png" alt="" class="gallery-photo">
+                <img src="images/gallery-5.png" alt="" class="gallery-photo">
+                <img src="images/gallery-6.png" alt="" class="gallery-photo">
+            </div>
+            <iframe
+                class="trailer-video"
+                src="https://www.youtube.com/embed/N1shYxPdGB8"
+                title="Left 4 Dead 2 Official Trailer"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+
+    <footer class="copyright" id="footer">
+        <div class="copyright-content">
+            <img src="images/footer-logo.png" alt="Left 4 Dead 2" class="copyright-logo">
+            <nav class="copyright-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Community</a>
+            </nav>
+            <hr class="copyright-line">
+            <p class="copyright-text">
+                &copy; 2009 Valve, the Valve logo, Left 4 Dead, the Left 4 Dead logo, Steam, the Steam logo,
+                Source, the Source logo, and Valve Source are trademarks and/or registered trademarks of Valve
+                Corporation in the United States and other countries. Xbox, Xbox 360, Xbox LIVE are trademarks
+                of the Microsoft group of companies and are used under license from Microsoft. All other
+                trademarks are properties of their respective companies.
+            </p>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 
 </body>
