@@ -9,6 +9,7 @@
     --white: #ffffff;
     --black: #000000;
     --nav-bg: rgba(8, 11, 14, 0.7);
+    --line: rgba(255, 255, 255, 0.35);
 
     --font-main: Arial, Helvetica, sans-serif;
     --font-condensed: "Roboto Condensed", sans-serif;
@@ -41,15 +42,6 @@ body {
     overflow-x: hidden;
 }
 
-/* =====================================================
-   EMPTY IMAGE SLOTS
-   Dashed boxes that hold space until the PNG is added.
-   Delete this rule once every image is in place.
-===================================================== */
-.img-slot {
-    background: rgba(255, 255, 255, 0.04);
-    border: 2px dashed rgba(255, 255, 255, 0.35);
-}
 
 /* =====================================================
    HERO SECTION
@@ -385,7 +377,9 @@ body {
     opacity: 1;
 }
 
-/* THE INFECTED SECTION */
+/* =====================================================
+   THE INFECTED SECTION
+===================================================== */
 .infected-section {
     position: relative;
     width: 100%;
@@ -402,7 +396,6 @@ body {
     left: 6%;
     top: 6%;
     width: 50%;
-    aspect-ratio: 1000 / 400;
     height: auto;
 }
 
@@ -419,7 +412,6 @@ body {
     text-shadow: 2px 2px 6px var(--black);
 }
 
-
 .infected-group {
     position: absolute;
     left: 0;
@@ -434,90 +426,37 @@ body {
     left: 5%;
     bottom: 0;
     width: 90%;
-    aspect-ratio: 1728 / 520;
     height: auto;
     display: block;
 }
 
-.infected-charger {
+/* Name labels */
+.infected-charger,
+.infected-hunter,
+.infected-spitter,
+.infected-jockey,
+.infected-tank,
+.infected-witch,
+.infected-boomer,
+.infected-smoker {
     position: absolute;
-    left: 6.5%;
-    top: 83%;
-    width: 8%;
-    aspect-ratio: 1728 / 520;
     height: auto;
     display: block;
-}
-.infected-hunter {
-    position: absolute;
-    left: 21.5%;
-    top: 88%;
-    width: 7%;
-    aspect-ratio: 1728 / 520;
-    height: auto;
-    display: block;
-}
-.infected-spitter {
-    position: absolute;
-    left: 31%;
-    top: 63%;
-    width: 7%;
-    aspect-ratio: 1728 / 520;
-    height: auto;
-    display: block;
+    z-index: 3;
 }
 
-.infected-jockey {
-    position: absolute;
-    left: 37.5%;
-    top: 92%;
-    width: 7%;
-    aspect-ratio: 1728 / 520;
-    height: auto;
-    display: block;
-}
+.infected-charger { left: 6.5%;  top: 83%; width: 8%; }
+.infected-hunter  { left: 21.5%; top: 88%; width: 7%; }
+.infected-spitter { left: 31%;   top: 63%; width: 7%; }
+.infected-jockey  { left: 37.5%; top: 92%; width: 7%; }
+.infected-tank    { left: 48%;   top: 76%; width: 6%; }
+.infected-witch   { left: 64%;   top: 93%; width: 7%; }
+.infected-boomer  { left: 76.5%; top: 75%; width: 7%; }
+.infected-smoker  { left: 87.5%; top: 83%; width: 7%; }
 
-.infected-tank {
-    position: absolute;
-    left: 48%;
-    top: 76%;
-    width: 6%;
-    aspect-ratio: 1728 / 720;
-    height: auto;
-    display: block;
-}
-
-.infected-witch {
-    position: absolute;
-    left: 64%;
-    top: 93%;
-    width: 7%;
-    aspect-ratio: 1728 / 520;
-    height: auto;
-    display: block;
-}
-
-.infected-boomer {
-    position: absolute;
-    left: 76.5%;
-    top: 75%;
-    width: 7%;
-    aspect-ratio: 1728 / 520;
-    height: auto;
-    display: block;
-}
-
-.infected-smoker{
-    position: absolute;
-    left: 87.5%;
-    top: 83%;
-    width: 7%;
-    aspect-ratio: 1728 / 520;
-    height: auto;
-    display: block;
-}
-
-/* MEDIA GALLERY SECTION */
+/* =====================================================
+   MEDIA GALLERY SECTION
+===================================================== */
 .gallery-section {
     position: relative;
     width: 100%;
@@ -534,7 +473,6 @@ body {
 .gallery-logo {
     display: block;
     width: 50%;
-    aspect-ratio: 1000 / 310;
     height: auto;
     margin: 0 auto 60px;
 }
@@ -542,11 +480,11 @@ body {
 /* Screenshot grid */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     align-items: center;
     max-width: 1500px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 
 .gallery-photo {
@@ -554,6 +492,7 @@ body {
     aspect-ratio: 16 / 10;
     height: auto;
     display: block;
+    object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease;
@@ -565,19 +504,96 @@ body {
 .gallery-photo:nth-child(3) { transform: rotate(-2deg); }
 .gallery-photo:nth-child(4) { transform: rotate(1deg); }
 .gallery-photo:nth-child(5) { transform: rotate(-1deg); }
-.gallery-photo:nth-child(6) { transform: rotate(0deg); }
-.gallery-photo:nth-child(7) { transform: rotate(0deg); }
-.gallery-photo:last-child:nth-child(3n+1) {grid-column: 2;}
+.gallery-photo:nth-child(6) { transform: rotate(3deg); }
+.gallery-photo:last-child:nth-child(3n + 1) { grid-column: 2; }
 
 .gallery-photo:hover {
     transform: rotate(0deg) scale(1.04);
 }
 
-/* =====================================================
-   TABLET
-===================================================== */
+/* Trailer video */
+.trailer-video {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+/*COPYRIGHT */
+.copyright {
+    position: relative;
+    width: 100%;
+    padding: 60px 5% 55px;
+    background: var(--black);
+    text-align: center;
+    overflow: hidden;
+}
+
+.copyright-content {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Small game logo */
+.copyright-logo {
+    display: block;
+    width: 170px;
+    height: auto;
+    margin: 0 auto 8px;
+}
+
+/* Keeps the box visible while the PNG is missing */
+.copyright-logo.img-slot {
+    aspect-ratio: 163 / 74;
+}
+
+/* Footer links */
+.copyright-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.copyright-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-size: 15px;
+    transition: color 0.25s ease;
+}
+
+.copyright-links a:hover {
+    color: var(--red);
+}
+
+/* Divider line */
+.copyright-line {
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto 28px;
+    border: none;
+    border-top: 1px solid var(--line);
+}
+
+/* Legal text */
+.copyright-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--white);
+    font-family: var(--font-main);
+    font-size: 12px;
+    line-height: 1.7;
+    opacity: 0.85;
+}
+
+/* TABLET*/
 @media (max-width: 1024px) {
-    /* Navigation */
     .nav-links { gap: 25px; }
     .nav-links a { font-size: 10px; }
     .nav-links a.active { font-size: 15px; }
@@ -601,16 +617,20 @@ body {
     /* Infected */
     .infected-logo { width: 52%; }
     .infected-text { font-size: 12px; }
-    .infected-name { letter-spacing: 1px; }
 
     /* Gallery */
     .gallery-logo { width: 45%; }
     .gallery-grid { gap: 18px; }
+
+    /* Footer */
+    .copyright-logo { width: 140px; }
+    .copyright-links { gap: 22px; }
+    .copyright-links a { font-size: 13px; }
+    .copyright-line { width: 70%; }
+    .copyright-text { font-size: 11px; }
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+/*MOBILE */
 @media (max-width: 600px) {
     /* Navigation */
     .navbar { height: 55px; }
@@ -652,12 +672,23 @@ body {
     .infected-logo { width: 70%; left: 8%; top: 8%; }
     .infected-text { left: 8%; top: 30%; width: 80%; font-size: 11px; }
     .infected-image { width: 100%; left: 0; }
-    .infected-name { letter-spacing: 0; font-size: 9px; }
 
     /* Gallery */
     .gallery-logo { width: 70%; margin-bottom: 30px; }
     .gallery-grid { grid-template-columns: 1fr; gap: 20px; }
     .gallery-photo:nth-child(1),
     .gallery-photo:nth-child(2),
-    .gallery-photo:nth-child(3) { transform: rotate(0deg); }
+    .gallery-photo:nth-child(3),
+    .gallery-photo:nth-child(4),
+    .gallery-photo:nth-child(5),
+    .gallery-photo:nth-child(6) { transform: rotate(0deg); }
+    .gallery-photo:last-child:nth-child(3n + 1) { grid-column: auto; }
+
+    /* Footer */
+    .copyright { padding: 40px 6% 35px; }
+    .copyright-logo { width: 120px; }
+    .copyright-links { flex-direction: column; gap: 10px; margin-bottom: 25px; }
+    .copyright-links a { font-size: 12px; }
+    .copyright-line { width: 85%; }
+    .copyright-text { font-size: 10px; line-height: 1.6; }
 }
