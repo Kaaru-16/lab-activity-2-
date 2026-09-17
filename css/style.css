@@ -42,15 +42,6 @@ body {
     overflow-x: hidden;
 }
 
-/* =====================================================
-   EMPTY IMAGE SLOTS
-   Dashed boxes that hold space until the PNG is added.
-   Remove the class from the tag once the image is in.
-===================================================== */
-.img-slot {
-    background: rgba(255, 255, 255, 0.04);
-    border: 2px dashed var(--line);
-}
 
 /* =====================================================
    HERO SECTION
@@ -235,18 +226,14 @@ body {
         0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* =====================================================
-   BOTTOM LOGOS
-===================================================== */
+/*BOTTOM LOGOS*/
 .bottom-logos {
     position: absolute;
     z-index: 30;
     left: 5%;
     bottom: 40px;
-    width: 2500px;
-    max-width: 60%;
+    width: 50%;
     height: auto;
-    mix-blend-mode: lighten;
 }
 
 /* =====================================================
