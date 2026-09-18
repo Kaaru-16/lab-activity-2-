@@ -32,6 +32,16 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5 {font-family: var(--font-main);}
+
+/* ID selectors*/
+#about,
+#survivors,
+#infected,
+#gallery {
+    scroll-margin-top: 60px;
+}
+
 
 /* HERO SECTION*/
 .hero {
@@ -107,6 +117,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 50px;
+    list-style: none;
 }
 
 .nav-links a {
